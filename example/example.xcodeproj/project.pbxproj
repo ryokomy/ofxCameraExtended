@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A60D63541ED1D907007F359A /* OrbitCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A60D63521ED1D907007F359A /* OrbitCamera.cpp */; };
+		08C23182D394C53F6ECE6CCC /* easing_terms_of_use.html in Sources */ = {isa = PBXBuildFile; fileRef = 528CB0EB22F0A199A5F479D5 /* easing_terms_of_use.html */; };
+		8FBE3521C0EE081F77ED34BC /* OrbitCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 366F9085FB756699386CAA7F /* OrbitCamera.cpp */; };
+		A6366DA41ED87E9100ABF8BA /* FixedCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6366DA21ED87E9100ABF8BA /* FixedCamera.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		F42600D52B915F3BA42B82A6 /* MorphCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7FF48DE2F36DB23719BC41E /* MorphCamera.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +46,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A60D634F1ED159ED007F359A /* ofxCameraExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxCameraExtended.h; path = ../src/ofxCameraExtended.h; sourceTree = "<group>"; };
-		A60D63521ED1D907007F359A /* OrbitCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OrbitCamera.cpp; path = ../src/OrbitCamera.cpp; sourceTree = "<group>"; };
-		A60D63531ED1D907007F359A /* OrbitCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrbitCamera.h; path = ../src/OrbitCamera.h; sourceTree = "<group>"; };
+		075D6B7BFE7E43D186EC3770 /* MorphCamera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MorphCamera.h; path = ../../../addons/ofxCameraExtended/src/MorphCamera.h; sourceTree = SOURCE_ROOT; };
+		366F9085FB756699386CAA7F /* OrbitCamera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OrbitCamera.cpp; path = ../../../addons/ofxCameraExtended/src/OrbitCamera.cpp; sourceTree = SOURCE_ROOT; };
+		528CB0EB22F0A199A5F479D5 /* easing_terms_of_use.html */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 30; name = easing_terms_of_use.html; path = ../../../addons/ofxEasing/src/easing_terms_of_use.html; sourceTree = SOURCE_ROOT; };
+		7303A3CBA1F0F9D81AC52062 /* OrbitCamera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OrbitCamera.h; path = ../../../addons/ofxCameraExtended/src/OrbitCamera.h; sourceTree = SOURCE_ROOT; };
+		A6366DA21ED87E9100ABF8BA /* FixedCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FixedCamera.cpp; path = ../src/FixedCamera.cpp; sourceTree = "<group>"; };
+		A6366DA31ED87E9100ABF8BA /* FixedCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FixedCamera.h; path = ../src/FixedCamera.h; sourceTree = "<group>"; };
+		D7FF48DE2F36DB23719BC41E /* MorphCamera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MorphCamera.cpp; path = ../../../addons/ofxCameraExtended/src/MorphCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -54,6 +61,8 @@
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		EB2A8E67BB11A6309437B17D /* ofxCameraExtended.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCameraExtended.h; path = ../../../addons/ofxCameraExtended/src/ofxCameraExtended.h; sourceTree = SOURCE_ROOT; };
+		FF2B018E24837032A4878576 /* ofxEasing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxEasing.h; path = ../../../addons/ofxEasing/src/ofxEasing.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0595A62FF5ED8D37029107 /* ofxEasing */ = {
+			isa = PBXGroup;
+			children = (
+				E78F8991E56DEF594815BB53 /* src */,
+			);
+			name = ofxEasing;
+			sourceTree = "<group>";
+		};
 		5FD75B0C26B5BB629F44522E /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A60D634F1ED159ED007F359A /* ofxCameraExtended.h */,
-				A60D63521ED1D907007F359A /* OrbitCamera.cpp */,
-				A60D63531ED1D907007F359A /* OrbitCamera.h */,
+				D7FF48DE2F36DB23719BC41E /* MorphCamera.cpp */,
+				075D6B7BFE7E43D186EC3770 /* MorphCamera.h */,
+				EB2A8E67BB11A6309437B17D /* ofxCameraExtended.h */,
+				366F9085FB756699386CAA7F /* OrbitCamera.cpp */,
+				7303A3CBA1F0F9D81AC52062 /* OrbitCamera.h */,
+				A6366DA21ED87E9100ABF8BA /* FixedCamera.cpp */,
+				A6366DA31ED87E9100ABF8BA /* FixedCamera.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -97,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B16EC435735B57BF061C2370 /* ofxCameraExtended */,
+				0D0595A62FF5ED8D37029107 /* ofxEasing */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -139,6 +161,15 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		E78F8991E56DEF594815BB53 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				528CB0EB22F0A199A5F479D5 /* easing_terms_of_use.html */,
+				FF2B018E24837032A4878576 /* ofxEasing.h */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60D63541ED1D907007F359A /* OrbitCamera.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				F42600D52B915F3BA42B82A6 /* MorphCamera.cpp in Sources */,
+				A6366DA41ED87E9100ABF8BA /* FixedCamera.cpp in Sources */,
+				8FBE3521C0EE081F77ED34BC /* OrbitCamera.cpp in Sources */,
+				08C23182D394C53F6ECE6CCC /* easing_terms_of_use.html in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +302,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../addons/ofxCameraExtended/src,
+					../../../addons/ofxEasing/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
@@ -303,6 +338,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../addons/ofxCameraExtended/src,
+					../../../addons/ofxEasing/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -331,6 +367,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../addons/ofxCameraExtended/src,
+					../../../addons/ofxEasing/src,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -359,6 +396,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 					../../../addons/ofxCameraExtended/src,
+					../../../addons/ofxEasing/src,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";

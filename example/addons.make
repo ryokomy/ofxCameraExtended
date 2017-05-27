@@ -1,1 +1,2 @@
 ofxCameraExtended
+ofxEasing

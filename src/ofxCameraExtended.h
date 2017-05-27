@@ -8,3 +8,5 @@
 
 #include "ofMain.h"
 #include "OrbitCamera.h"
+#include "MorphCamera.h"
+#include "FixedCamera.h"

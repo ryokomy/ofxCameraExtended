@@ -13,7 +13,7 @@ namespace ofxCameraExtended{
     class OrbitCamera : public ofCamera{
         float longitude; // [degree]
         float latitude; // [degree]
-        float radius; // [m]
+        float radius; // [cm]
         float speed_longitude; // [degree/s]
         float speed_latitude; // [degree/s]
         ofNode target_node; // orbit center

@@ -12,7 +12,7 @@ namespace ofxCameraExtended{
     OrbitCamera::OrbitCamera(){
         longitude = 0; // [degree]
         latitude = 0; // [degree]
-        radius = 3; // [m]
+        radius = 1000; // [cm]
         
         speed_longitude = 20; // [degree/s]
         speed_latitude = 10; // [degree/s]
@@ -38,9 +38,9 @@ namespace ofxCameraExtended{
     void OrbitCamera::drawSelf(){
         ofPushMatrix();
         ofPushStyle();
-        ofDrawSphere(getPosition(), 0.05);
-        ofDrawBitmapString("OrbitCamera", getPosition()+ofVec3f(1, 1, 1)*0.1);
-        float arrowsize = 0.5;
+        ofDrawSphere(getPosition(), 5);
+        ofDrawBitmapString("OrbitCamera", getPosition()+ofVec3f(1, 1, 1)*10);
+        float arrowsize = 50;
         ofSetColor(255, 0, 0);
         ofDrawArrow(getPosition(), getPosition()-getSideDir()*arrowsize);
         ofSetColor(0, 255, 0);
