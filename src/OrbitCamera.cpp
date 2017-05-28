@@ -4,6 +4,13 @@
 //  Created by ryoheikomiyama on 2017/05/21.
 //
 //
+// memo:
+// longitude = 0, latitude = 0  ->  +z
+// +longitude  ->  rotate y (over 360 degree works as well)
+// +latitude  ->  rotate x (over 360 degree works as well)
+//                when latitude = 180, object z direction equals to world z direction
+//                                     object y direction equals to world -y direction
+
 
 #include "OrbitCamera.h"
 
@@ -18,6 +25,7 @@ namespace ofxCameraExtended{
         speed_latitude = 10; // [degree/s]
         
         target_node.setPosition(0, 0, 0);
+        orbit(longitude, latitude, radius, target_node);
     }
     
     OrbitCamera::~OrbitCamera(){

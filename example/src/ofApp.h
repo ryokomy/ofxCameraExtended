@@ -5,7 +5,7 @@
 
 class ofApp : public ofBaseApp{
     
-    ofEasyCam easy_cam;
+    ofxCameraExtended::EasyCamera easy_cam;
     ofxCameraExtended::OrbitCamera orbit_cam;
     ofxCameraExtended::MorphCamera morph_cam;
     ofxCameraExtended::FixedCamera fixed_cam;

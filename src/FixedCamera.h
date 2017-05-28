@@ -7,7 +7,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxEasing.h"
 
 namespace ofxCameraExtended{
 
