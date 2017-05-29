@@ -5,22 +5,22 @@ void ofApp::setup(){
     ofEnableDepthTest();
     // use meter scale
     // easy_cam
-    easy_cam.setNearClip(near);
-    easy_cam.setFarClip(far);
+    easy_cam.setNearClip(nearclip);
+    easy_cam.setFarClip(farclip);
     easy_cam.setDistance(8);
     easy_cam.orbit(45, -15, 8);
     // orbit_cam
-    orbit_cam.setNearClip(near);
-    orbit_cam.setFarClip(far);
+    orbit_cam.setNearClip(nearclip);
+    orbit_cam.setFarClip(farclip);
     // morph_cam
-    morph_cam.setNearClip(near);
-    morph_cam.setFarClip(far);
+    morph_cam.setNearClip(nearclip);
+    morph_cam.setFarClip(farclip);
     // fixed_cam
-    fixed_cam.setNearClip(near);
-    fixed_cam.setFarClip(far);
+    fixed_cam.setNearClip(nearclip);
+    fixed_cam.setFarClip(farclip);
     // follow_cam
-    follow_cam.setNearClip(near);
-    follow_cam.setFarClip(far);
+    follow_cam.setNearClip(nearclip);
+    follow_cam.setFarClip(farclip);
 }
 
 //--------------------------------------------------------------

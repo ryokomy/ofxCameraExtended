@@ -10,8 +10,8 @@ class ofApp : public ofBaseApp{
     ofxCameraExtended::MorphCamera morph_cam;
     ofxCameraExtended::FixedCamera fixed_cam;
     ofxCameraExtended::FollowCamera follow_cam;
-    float near = 0.001;
-    float far = 1000;
+    float nearclip = 0.001;
+    float farclip = 1000;
 
 	public:
 		void setup();
