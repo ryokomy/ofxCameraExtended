@@ -3,12 +3,12 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofEnableDepthTest();
-    // use centi meter scale
+    // use meter scale
     // easy_cam
     easy_cam.setNearClip(near);
     easy_cam.setFarClip(far);
-    easy_cam.setDistance(800);
-    easy_cam.orbit(45, -15, 800);
+    easy_cam.setDistance(8);
+    easy_cam.orbit(45, -15, 8);
     // orbit_cam
     orbit_cam.setNearClip(near);
     orbit_cam.setFarClip(far);
@@ -28,7 +28,7 @@ void ofApp::update(){
     // auto morphing
     if(ofGetFrameNum()%90==0){
         ofNode tn;
-        float boxsize = 800;
+        float boxsize = 8;
         tn.setPosition(ofRandom(-boxsize, boxsize), ofRandom(-boxsize, boxsize), ofRandom(-boxsize, boxsize));
         tn.lookAt(ofVec3f(0, 0, 0), ofVec3f(0, 1, 0));
         morph_cam.startMorph(tn);
@@ -45,16 +45,16 @@ void ofApp::draw(){
     ofClear(0);
     easy_cam.begin();
     
-    ofDrawGrid(50, 20);
+    ofDrawGrid(0.5, 20);
     
     ofPushStyle();
     ofSetLineWidth(3);
     ofSetColor(255, 0, 0);
-    ofDrawArrow(ofVec3f(0, 0, 0), ofVec3f(100, 0, 0));
+    ofDrawArrow(ofVec3f(0, 0, 0), ofVec3f(1, 0, 0));
     ofSetColor(0, 255, 0);
-    ofDrawArrow(ofVec3f(0, 0, 0), ofVec3f(0, 100, 0));
+    ofDrawArrow(ofVec3f(0, 0, 0), ofVec3f(0, 1, 0));
     ofSetColor(0, 0, 255);
-    ofDrawArrow(ofVec3f(0, 0, 0), ofVec3f(0, 0, 100));
+    ofDrawArrow(ofVec3f(0, 0, 0), ofVec3f(0, 0, 1));
     ofPopStyle();
     
     orbit_cam.drawSelf();

@@ -10,7 +10,7 @@
 namespace ofxCameraExtended{
 
     FixedCamera::FixedCamera(){
-        setPosition(-600, 300, 200);
+        setPosition(-6, 3, 2);
         lookAt(ofVec3f(0, 0, 0), ofVec3f(0, 1, 0));
     }
     
@@ -19,9 +19,9 @@ namespace ofxCameraExtended{
     void FixedCamera::drawSelf(){
         ofPushMatrix();
         ofPushStyle();
-        ofDrawSphere(getPosition(), 5);
-        ofDrawBitmapString("FixedCamera", getPosition()+ofVec3f(1, 1, 1)*10);
-        float arrowsize = 50;
+        ofDrawSphere(getPosition(), 0.05);
+        ofDrawBitmapString("FixedCamera", getPosition()+ofVec3f(1, 1, 1)*0.1);
+        float arrowsize = 0.5;
         ofSetColor(255, 0, 0);
         ofDrawArrow(getPosition(), getPosition()-getSideDir()*arrowsize);
         ofSetColor(0, 255, 0);
