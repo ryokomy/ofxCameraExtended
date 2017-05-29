@@ -9,6 +9,7 @@ class ofApp : public ofBaseApp{
     ofxCameraExtended::OrbitCamera orbit_cam;
     ofxCameraExtended::MorphCamera morph_cam;
     ofxCameraExtended::FixedCamera fixed_cam;
+    ofxCameraExtended::FollowCamera follow_cam;
     float near = 0.01;
     float far = 10000;
 
