@@ -19,7 +19,7 @@ namespace ofxCameraExtended{
     OrbitCamera::OrbitCamera(){
         longitude = 0; // [degree]
         latitude = 0; // [degree]
-        radius = 10; // [m]
+        radius = 1000; // [cm]
         
         speed_longitude = 20; // [degree/s]
         speed_latitude = 10; // [degree/s]

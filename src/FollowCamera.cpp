@@ -10,7 +10,7 @@
 namespace ofxCameraExtended{
 
     FollowCamera::FollowCamera(){
-        setPosition(-6, -5, 2);
+        setPosition(-600, -500, 200);
         lookAt(ofVec3f(0, 0, 0), ofVec3f(0, 1, 0));
     }
     

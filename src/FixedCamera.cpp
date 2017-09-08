@@ -10,8 +10,8 @@
 namespace ofxCameraExtended{
 
     FixedCamera::FixedCamera(){
-        setPosition(-6, 3, 2);
-        lookAt(ofVec3f(0, 0, 0), ofVec3f(0, 1, 0));
+        setPosition(-300, 300*1.6, 200);
+        lookAt(ofVec3f(300, 300/2.0, 0), ofVec3f(0, 1, 0));
     }
     
     FixedCamera::~FixedCamera(){}

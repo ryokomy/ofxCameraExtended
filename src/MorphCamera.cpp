@@ -10,7 +10,7 @@
 namespace ofxCameraExtended{
 
     MorphCamera::MorphCamera(){
-        setPosition(3, 2, 3);
+        setPosition(300, 200, 300);
         lookAt(ofVec3f(0, 0, 0), ofVec3f(0, 1, 0));
         target_node.setPosition(0, 0, 0);
         target_node.lookAt(ofVec3f(0, 0, 1), ofVec3f(0, 1, 0));
